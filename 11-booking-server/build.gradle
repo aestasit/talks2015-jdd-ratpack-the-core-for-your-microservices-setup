@@ -1,0 +1,37 @@
+buildscript {
+  repositories {
+    maven { url "http://oss.jfrog.org/artifactory/repo" }
+    jcenter()
+  }
+  dependencies {
+    classpath "io.ratpack:ratpack-gradle:1.0.0"
+    classpath "com.github.jengelman.gradle.plugins:shadow:1.2.2"
+  }
+}
+
+apply plugin: "io.ratpack.ratpack-groovy"
+apply plugin: "com.github.johnrengelman.shadow"
+apply plugin: "idea"
+apply plugin: "eclipse"
+apply plugin: "project-report"
+
+repositories {
+  maven { url "http://oss.jfrog.org/artifactory/repo" }
+  jcenter()
+  maven { url "http://repo.springsource.org/repo" }
+}
+
+configurations.all {
+  exclude module: "groovy"
+}
+
+dependencies {
+  runtime 'org.slf4j:slf4j-simple:1.7.12'
+  testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+}
+
+run {
+  jvmArgs "-Dratpack.port=8901"
+  systemProperty "ratpack.reloadable", "true"
+}
+
