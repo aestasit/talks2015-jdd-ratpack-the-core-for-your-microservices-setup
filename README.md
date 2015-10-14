@@ -78,7 +78,7 @@ The `--continuous` flag starts the build in special mode that will update your r
 
 The target setup is the following:
 
-![Setup]()
+![Setup](https://raw.githubusercontent.com/aestasit/talks2015-jdd-ratpack-the-core-for-your-microservices-setup/master/DEMO_ARCHITECTURE.png)
 
 In actual source code, data storage connectivity is not implemented, but it does not hurt for demonstrating the principles. 
 The front web application will continue to function even if both of the services it depends on will be down. 
@@ -87,7 +87,7 @@ Non-blocking HTTP client implementation coming with Ratpack is used to aggregate
 
 Enjoy!
 
-![Front page]()
+![Front page](https://raw.githubusercontent.com/aestasit/talks2015-jdd-ratpack-the-core-for-your-microservices-setup/master/SHOP_FRONT.png)
 
 
  
