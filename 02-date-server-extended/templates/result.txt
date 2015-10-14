@@ -1,0 +1,1 @@
+Time on JDD is ${model.jddTime}
