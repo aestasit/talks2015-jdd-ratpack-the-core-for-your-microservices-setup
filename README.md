@@ -22,7 +22,7 @@ To run the sample just type the following command from within the `01-date-serve
 
     groovy ratpack.groovy
 
-# Date Server: extended
+## Date Server: extended
 
 The `01-date-server-extended` folder contains more advanced date server example that shows how to render JSON, XML, HTML and plain text.
 
